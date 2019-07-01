@@ -1,2 +1,0 @@
-# VueCalculator
-Created with CodeSandbox
