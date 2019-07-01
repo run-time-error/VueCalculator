@@ -13,9 +13,7 @@ export default {
     onClick() {
       this.$emit("btn-clicked", this.btn_text);
     },
-    anAwesomeSecondMethod() {
-      alert("I am awesome");
-    }
+    
   }
 };
 </script>
