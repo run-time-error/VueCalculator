@@ -1,30 +1,16 @@
 <template>
   <div id="app">
-    <Display :text="displayStr"/>
-    <NumberPallete @display="handleDisplayEvent"/>
+    <Calculator/>
   </div>
 </template>
 
 <script>
-import NumberPallete from "./components/NumberPallete";
-import Display from "./components/Display";
+import Calculator from "./components/Calculator";
 
 export default {
   name: "App",
   components: {
-    NumberPallete,
-    Display
-  },
-  data() {
-    return {
-      displayStr: ""
-    };
-  },
-  methods: {
-    handleDisplayEvent(val) {
-      this.displayStr += val;
-      console.log(this.displayStr);
-    }
+    Calculator
   }
 };
 </script>
@@ -37,10 +23,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  width: 76vw;
-  height: 50vh;
-  border: 1px solid #162636;
 }
 </style>

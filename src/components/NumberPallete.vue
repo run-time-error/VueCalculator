@@ -39,6 +39,10 @@ export default {
           backColor: "blue"
         },
         {
+          text: "+",
+          backColor: "#7f1f1f"
+        },
+        {
           text: "1",
           backColor: "black"
         },
@@ -49,6 +53,10 @@ export default {
         {
           text: "3",
           backColor: "black"
+        },
+        {
+          text: "-",
+          backColor: "#7f1f1f"
         },
         {
           text: "4",
@@ -63,6 +71,10 @@ export default {
           backColor: "black"
         },
         {
+          text: "*",
+          backColor: "#7f1f1f"
+        },
+        {
           text: "7",
           backColor: "black"
         },
@@ -73,6 +85,10 @@ export default {
         {
           text: "9",
           backColor: "black"
+        },
+        {
+          text: "/",
+          backColor: "#7f1f1f"
         }
       ];
       return arr.slice().reverse();
@@ -85,20 +101,16 @@ export default {
 <style scoped>
 .__calc-number-pallete {
   background-color: black;
-  width: 35vw;
+  width: 46vw;
   height: 25vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   padding: 1vh;
   margin: 0.5vh 3vh;
-
   justify-content: space-around;
   align-self: flex-end;
-  align-items: center;
-
-  /* align-items: center;
-  justify-content: center; */
+  align-items: flex-start;
   color: white;
 }
 </style>
