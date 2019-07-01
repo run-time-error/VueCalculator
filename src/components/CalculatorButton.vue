@@ -15,6 +15,9 @@ export default {
     },
     anAwesomeSecondMethod() {
       alert("I am awesome");
+    },
+    finalMethod() {
+      alert("final");
     }
   }
 };
